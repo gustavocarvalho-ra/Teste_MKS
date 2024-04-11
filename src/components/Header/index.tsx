@@ -9,6 +9,8 @@ import {
   DrawerFooter,
   Button,
   useDisclosure,
+  Box,
+  Card,
 } from "@chakra-ui/react";
 import { HeaderS, CartCheckout } from "./styles";
 import Image from "next/image";
@@ -31,7 +33,7 @@ export default function Header() {
         <h1>0</h1>
       </CartCheckout>
 
-      <Drawer isOpen={isOpen} placement="right" onClose={onClose} size="sm">
+      <Drawer isOpen={isOpen} placement="right" onClose={onClose} size="md">
         <DrawerOverlay />
         <DrawerContent bg="#0F52BA">
           <DrawerCloseButton
@@ -44,10 +46,46 @@ export default function Header() {
             Carrinho <br /> de compras
           </DrawerHeader>
 
-          <DrawerBody>
-            <p>body do drawer</p>
+          <DrawerBody fontFamily={'Montserrat'} >
+            <Box
+            width={'100%'}
+            height={"90%"}
+            px={9}
+            >
+              <Card
+                width={"100%"}
+                height={'95px'}
+                display={'flex'}
+                flexDirection={"row"}
+                alignItems={"center"}
+                px={3}
+                gap={3}
+
+                >
+                <Box
+                  width={55}
+                  height={65}
+                  bg={'black'}
+                  >
+
+                </Box>
+                <p>aaaaaaaaaaaaaaaaaaaabody do drawer</p>
+              </Card>
+            </Box>
+
+            <Box
+            display={'flex'}
+            justifyContent={'space-around'}
+            alignItems={"center"}
+            width='100%'
+            height='10%'
+            color={"white"}
+            fontWeight={700}
+            fontSize={28}
+            >
               <ul>Total:</ul>
               <ul>R$999</ul>
+            </Box>
           </DrawerBody>
 
           <DrawerFooter p={0}>
