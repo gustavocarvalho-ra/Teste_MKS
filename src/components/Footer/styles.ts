@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const FooterF = styled.div `
-position: absolute;
+  position: absolute; 
   width: 100%;
   height: 34px;
   bottom: 0;
