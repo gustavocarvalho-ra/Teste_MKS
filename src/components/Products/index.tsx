@@ -1,4 +1,4 @@
-import { Container, Bag } from "./styles";
+import { Container } from "./styles";
 import Image from "next/image";
 
 export default function Products() {
@@ -26,13 +26,6 @@ export default function Products() {
         <div>7</div>
         <div>8</div>
       </section>
-      <Bag id="bag">
-        <div>
-          <ul>Total:</ul>
-          <ul>R$000</ul>
-        </div>
-        <button>Finalizar Compra</button>
-      </Bag>
     </Container>
   )
 }
