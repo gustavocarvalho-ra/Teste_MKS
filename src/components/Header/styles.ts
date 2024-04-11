@@ -39,5 +39,6 @@ export const CartCheckout = styled.div `
     font-size: 15px;
     color: #000;
     margin: 0;
+    font-weight: 700;
   }
 `
