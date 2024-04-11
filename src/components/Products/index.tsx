@@ -8,7 +8,7 @@ export default function Products() {
         <div>
           <q></q>
           <a>
-            <p>SKdj</p>
+            <p>SKdjaaaaaaaaaaaaaaaaaaaa</p>
             <g>R$999</g>
           </a>
           <desc>

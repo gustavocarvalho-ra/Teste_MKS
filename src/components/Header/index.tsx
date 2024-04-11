@@ -66,8 +66,7 @@ export default function Header() {
                   width={55}
                   height={65}
                   bg={'black'}
-                  >
-
+                >
                 </Box>
                 <p>aaaaaaaaaaaaaaaaaaaabody do drawer</p>
               </Card>

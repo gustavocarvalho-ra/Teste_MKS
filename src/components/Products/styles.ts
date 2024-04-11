@@ -6,7 +6,6 @@ export const Container = styled.div `
   display: flex;
   align-items: center;
   justify-content: center;
-  
 
   section {
     width: 938px;
@@ -44,7 +43,7 @@ export const Container = styled.div `
         p {
           width: 150px;
           height: 40px;
-          padding: 5px 0 0 9px;
+          padding: 5px 22px 0 9px;
 
           font-weight: 400;
           font-size: 16px;
@@ -72,7 +71,7 @@ export const Container = styled.div `
       desc {
         width: 100%;
         height: 35px;
-        padding-left: 9px;
+        padding: 3px 0 0 9px;
         p {
           font-weight: 300;
           line-height: 12px;
@@ -91,14 +90,12 @@ export const Container = styled.div `
         background: #0F52BA;
         transition: 2s;
 
-
         p {
           color: #fff;
           font-size: 14px;
           line-height: 18px;
           font-weight: 600;
           padding-left: 13px;
-
         }
       }
       button:hover {
