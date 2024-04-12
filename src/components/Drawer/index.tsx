@@ -24,6 +24,13 @@ export const DrawerShopping = ({ isOpen, onClose }: DrawerShoppingProps) => {
   const { listShoppingCart } = useShoppingCart();
   console.log(listShoppingCart);
 
+  // const dubleCart = listShoppingCart.find(
+  //   (product) => product.id === product.id
+  // )
+  //   if (dubleCart) {
+  //     const 
+  //   }
+
   const calculateTotalPrice = () => {
     const totalPrice = listShoppingCart.reduce(
       (total, product) => total + Number(product.price),
@@ -31,6 +38,10 @@ export const DrawerShopping = ({ isOpen, onClose }: DrawerShoppingProps) => {
     );
     return totalPrice;
   };
+  
+  // const handleRemoveCart = (id: number) => {
+
+  // }
 
   return (
     <Drawer isOpen={isOpen} placement="right" onClose={onClose} size="md">
@@ -47,7 +58,7 @@ export const DrawerShopping = ({ isOpen, onClose }: DrawerShoppingProps) => {
         </DrawerHeader>
 
         <DrawerBody>
-          <Stack width={"100%"} height={"90%"} px={9} overflowY="auto">
+          <Stack width={"100%"} height={"90%"} px={9} overflowY="auto"  paddingTop={2}>
             {listShoppingCart.map((product) => (
               <Card
                 width={"100%"}
@@ -58,6 +69,8 @@ export const DrawerShopping = ({ isOpen, onClose }: DrawerShoppingProps) => {
                 px={3}
                 gap={3}
                 key={product.id}
+                fontFamily='Montserrat'
+                marginBottom={1.5}
                 >
                 <Image
                   src={product.photo}
@@ -71,7 +84,8 @@ export const DrawerShopping = ({ isOpen, onClose }: DrawerShoppingProps) => {
                   <p>1</p>
                   <button style={{fontSize: '17px', color: 'green'}}>+</button>
                 </div>
-                <p style={{fontFamily: 'Montserrat', fontWeight: '700', lineHeight: '17px', fontSize: '14px', marginLeft: '20px' }}>R${product.price}</p>
+                <p style={{lineHeight: '17px', fontSize: '14px', marginLeft: '20px', fontWeight: '700' }}>R${product.price}</p>
+                {/* <button onClick={() => handleRemoveCart(product.id)} style={{width: '22px', height: '22px', background: '#000', borderRadius: '50%', color: '#fff', top: '-7px', right: '-7px', position: 'absolute'}}>x</button> */}
               </Card>
             ))}
           </Stack>
@@ -84,6 +98,7 @@ export const DrawerShopping = ({ isOpen, onClose }: DrawerShoppingProps) => {
             color={"white"}
             fontWeight={700}
             fontSize={28}
+            marginTop={5}
             >
             <p>Total:</p>
             <p>R$ {calculateTotalPrice()}</p>
@@ -105,5 +120,5 @@ export const DrawerShopping = ({ isOpen, onClose }: DrawerShoppingProps) => {
         </DrawerFooter>
       </DrawerContent>
     </Drawer>
-  );
+  );
 };
