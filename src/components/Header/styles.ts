@@ -1,28 +1,28 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
-export const HeaderS = styled.div `
+export const HeaderS = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   height: 101px;
-  background: #0F52BA;
+  background: #0f52ba;
 
   h1 {
     color: #fff;
     font-size: 40px;
-    font-family: 'Montserrat';
+    font-family: "Montserrat";
     font-weight: 600;
     margin-left: 65px;
   }
-  
+
   span {
     font-weight: 100;
     font-size: 20px;
   }
-`
+`;
 
-export const CartCheckout = styled.div `
+export const CartCheckout = styled.button`
   width: 60px;
   height: 40px;
   border-radius: 8px;
@@ -39,6 +39,6 @@ export const CartCheckout = styled.div `
     font-size: 15px;
     color: #000;
     margin: 0;
-    font-weight: 700;
+    font-weight: 700;
   }
-`
+`;
