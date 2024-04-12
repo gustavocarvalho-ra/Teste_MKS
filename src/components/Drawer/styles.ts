@@ -5,5 +5,5 @@ export const NameProduct = styled.h1`
   font-size: 13px;
   color: #2c2c2c;
   line-height: 17px;
-  width: 113px;
+  width: 113px;
 `;

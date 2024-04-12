@@ -123,12 +123,12 @@ export const PageProductList = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 1rem;
+  gap: 12px;
 
   button {
     border-radius: 8px;
     width: 32px;
     background: #80808061;
     height: 32px;
-    margin-left: 1rem;
   }
 `;

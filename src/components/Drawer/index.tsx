@@ -58,7 +58,7 @@ export const DrawerShopping = ({ isOpen, onClose }: DrawerShoppingProps) => {
                 px={3}
                 gap={3}
                 key={product.id}
-              >
+                >
                 <Image
                   src={product.photo}
                   alt="Imagem do carrinho de compra"
@@ -66,10 +66,12 @@ export const DrawerShopping = ({ isOpen, onClose }: DrawerShoppingProps) => {
                   height={57}
                 />
                 <NameProduct>{product.name}</NameProduct>
-                <div>
-                  <button>+</button>
-                  <button>-</button>
+                <div style={{width:'60px', display:'flex', alignItems: 'center', justifyContent: 'space-between',  gap: '10px', padding: '0 5px 0 5px', borderRadius: '4px', border: '1px solid #bfbfbf'}}>
+                  <button style={{fontSize: '17px', color: 'red'}}>-</button>
+                  <p>1</p>
+                  <button style={{fontSize: '17px', color: 'green'}}>+</button>
                 </div>
+                <p style={{fontFamily: 'Montserrat', fontWeight: '700', lineHeight: '17px', fontSize: '14px', marginLeft: '20px' }}>R${product.price}</p>
               </Card>
             ))}
           </Stack>
@@ -82,7 +84,7 @@ export const DrawerShopping = ({ isOpen, onClose }: DrawerShoppingProps) => {
             color={"white"}
             fontWeight={700}
             fontSize={28}
-          >
+            >
             <p>Total:</p>
             <p>R$ {calculateTotalPrice()}</p>
           </Box>
@@ -97,7 +99,7 @@ export const DrawerShopping = ({ isOpen, onClose }: DrawerShoppingProps) => {
             h="97px"
             fontSize={28}
             _hover={{ opacity: 0.8, bg: "black" }}
-          >
+            >
             Finalizar Compra
           </Button>
         </DrawerFooter>

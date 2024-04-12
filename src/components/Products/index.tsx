@@ -100,5 +100,5 @@ export default function Products() {
         </PageProductList>
       </motion.div>
     </Container>
-  );
+  );
 }
