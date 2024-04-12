@@ -11,5 +11,6 @@ export interface ProductsResponse {
     description: string;
     photo: string;
     price: number;
+    quantity: number
   }[];
 }

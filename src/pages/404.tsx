@@ -1,4 +1,3 @@
-// import Link from "next/link";
 import Image from "next/image";
 
 export default function NotFound() {
@@ -10,11 +9,6 @@ export default function NotFound() {
           width={750}
           height={750}
         />
-        {/* <Link
-          color="red"
-          href=" /">
-          Go back home
-        </Link> */}
         <a href=" /" style={{color: '#fff', fontSize: '30px', fontFamily: 'Montserrat'}}>Clique aqui para voltar</a>
     </main>
   );
